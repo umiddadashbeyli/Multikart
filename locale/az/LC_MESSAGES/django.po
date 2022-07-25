@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-07 19:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: account/admin.py:10
+msgid "Personal info"
+msgstr ""
+
+#: account/admin.py:11
+msgid "Permissions"
+msgstr ""
+
+#: account/admin.py:14
+msgid "Important dates"
+msgstr ""
+
+#: account/forms.py:12
+msgid "Password"
+msgstr ""
+
+#: account/forms.py:21
+msgid "Password confirmation"
+msgstr ""
+
+#: account/forms.py:26 account/forms.py:105
+msgid "Enter the same password as before, for verification."
+msgstr ""
+
+#: account/models.py:12
+msgid "email address"
+msgstr ""
+
+#: core/templates/partials/header.html:123
+msgid "Home"
+msgstr ""
+
+#: core/templates/partials/header.html:126
+msgid "new demos"
+msgstr "yeni demolar"
+
+#: core/templates/partials/header.html:126
+msgid "new"
+msgstr "yeni"
+
+#: core/templates/partials/header.html:128
+msgid "tools"
+msgstr ""

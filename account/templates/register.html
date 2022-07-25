@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="page-title">
+                        <h2>create account</h2>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <nav aria-label="breadcrumb" class="theme-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">create account</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb End -->
+
+
+    <!--section start-->
+    <section class="register-page section-b-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>create account</h3>
+                    <div class="theme-card">
+                        <form class="theme-form" method="POST">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    {{ form.first_name.label_tag}}
+                                    {{ form.first_name }}
+                                    {{ form.first_name.errors}}
+                                </div>
+                                <div class="col-md-6">
+                                    {{ form.last_name.label_tag }}
+                                    {{ form.last_name }}
+                                    {{ form.last_name.errors }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    {{ form.email.label_tag }}
+                                    {{ form.email }}
+                                    {{ form.email.errors }}
+                                </div>
+                                <div class="col-md-6">
+                                    {{ form.username.label_tag }}
+                                    {{ form.username }}
+                                    {{ form.username.errors }}
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    {{ form.password1.label_tag }}
+                                    {{ form.password1 }}
+                                    {{ form.password1.errors }}
+                                </div> 
+                                <div class="col-md-6">
+                                    {{ form.password2.label_tag }}
+                                    {{ form.password2 }}
+                                    {{ form.password2.errors }}
+                                </div> 
+                                <button type="submit" class="btn btn-solid">create Account</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section ends-->
+
+
+{% endblock %}

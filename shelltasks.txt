@@ -1,0 +1,20 @@
+./manage.py shell
+
+1.
+last_eight = Product.objects.all()[:8]
+
+2.
+products = Product.objects.filter(category__title__icontains = 'shoes')
+
+3.
+new_three = Product.objects.all().order_by('-id')[:3]
+
+4.
+product = Product.objects.filter(title__icontains = 'c')
+product = product.first()
+category = product.property_value.property.category.title
+category
+products = Product.objects.filter(category__title__icontains = 'shoes') (shoes categorynin neticesidi)
+
+
+5.
